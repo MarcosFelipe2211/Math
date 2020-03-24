@@ -1,0 +1,20 @@
+// Qual a integral de 2x? \\
+
+public class calculoIntegral{
+    public static void main(String args[]){
+        
+    // ∫ 2x dx \\
+    
+    double a = 2;
+    double expoente = 1;
+    
+    // Integrando \\
+    
+    double expoenteI = expoente + 1;
+    double denominador = expoenteI;
+    double dividindo = a / denominador;
+    
+    System.out.println(dividindo + "x"  + "^" + expoenteI + "+" + "c");
+
+    }
+}
