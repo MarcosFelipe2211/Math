@@ -1,0 +1,28 @@
+// Dada as coordenadas (2,5)(7,9), calcule a equação reduzida da reta \\
+
+public class EquacaoReduzidaDaReta{
+    public static void main(String args[]){
+        
+    // Fórmula: y-y0=m(x-x0) \\    
+
+    double xA = 2;
+    double yA = 5;
+    double xB = 7;
+    double yB = 9;
+    
+    double y0Calculando = yA * -1;
+    double coeficienteAngular = (yB-yA) / (xB-xA);
+    double x0Calculando = coeficienteAngular * xA;
+    double invertendoSinalY0 = y0Calculando * -1;
+    double coeficienteLinear = x0Calculando + invertendoSinalY0;
+    
+        if(coeficienteAngular == 0){
+            System.out.println("Syntax error: O coeficiente angular não pode ser 0");
+        }else if(coeficienteLinear < 0){
+            System.out.println("y = " + coeficienteAngular + "x" + " " + coeficienteLinear);
+        }else{
+            System.out.println("y = " + coeficienteAngular + "x" + " " + "+" + " " + coeficienteLinear);
+        }
+
+    }
+}
